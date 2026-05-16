@@ -686,11 +686,7 @@ first.parentNode.insertBefore(script, first);
       --color-foreground: 235 235 235;
       --color-highlight: 200 200 200;
     }
-  </style><nav class="topbar topbar--center page-width page-width--full section section--rounded relative grid py-0 h-full w-full items-center" aria-label="Announcement bar"><div class="social-icons hidden lg:flex items-center"><ul class="flex flex-wrap items-center gap-6" role="list"><li><a href="https://www.youtube.com/@SrdsEDITS" class="social_platform block relative" is="magnet-link" title="Srds Edits on YouTube"><svg class="icon icon-youtube icon-sm" viewBox="0 0 24 24" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M23.8 7.6C23.8 7.6 23.6 5.9 22.8 5.2C21.9 4.2 20.9 4.2 20.4 4.2C17 4 12 4 12 4C12 4 7 4 3.6 4.2C3.1 4.3 2.1 4.3 1.2 5.2C0.5 5.9 0.2 7.6 0.2 7.6C0.2 7.6 0 9.5 0 11.5V13.3C0 15.2 0.2 17.2 0.2 17.2C0.2 17.2 0.4 18.9 1.2 19.6C2.1 20.6 3.3 20.5 3.8 20.6C5.7 20.8 12 20.8 12 20.8C12 20.8 17 20.8 20.4 20.5C20.9 20.4 21.9 20.4 22.8 19.5C23.5 18.8 23.8 17.1 23.8 17.1C23.8 17.1 24 15.2 24 13.2V11.4C24 9.5 23.8 7.6 23.8 7.6ZM9.5 15.5V8.8L16 12.2L9.5 15.5Z"/>
-    </svg><span class="sr-only">YouTube</span>
-        </a>
-      </li></ul></div><div class="announcement-bar h-full flex justify-center lg:justify-center relative">
+  </style><nav class="topbar topbar--center page-width page-width--full section section--rounded relative grid py-0 h-full w-full items-center" aria-label="Announcement bar"><div class="announcement-bar h-full flex justify-center lg:justify-center relative">
         <announcement-bar id="Slider-sections--19860118896866__announcement-bar" class="announcement__slides" autoplay autoplay-speed="5"><div class="announcement__slide flex h-full" ></div></announcement-bar></div></nav>
 </div><div id="shopify-section-sections--19860118896866__header" class="shopify-section shopify-section-group-header-group header-section"><style>
   #shopify-section-sections--19860118896866__header {
@@ -699,6 +695,16 @@ first.parentNode.insertBefore(script, first);
     --color-background: 24 24 24;
     --color-foreground: 232 232 232;
     --color-transparent: 24 24 24;
+  }
+
+  #shopify-section-sections--19860118896866__header .header.header--left-center {
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+  }
+
+  #shopify-section-sections--19860118896866__header .header__icons--end {
+    grid-column: -1;
+    justify-self: end;
+    margin-left: auto;
   }
 </style><header data-section-id="sections--19860118896866__header" class="header header--left-center mobile:header--center page-width page-width--full section section--rounded section--padding grid items-center z-20 relative w-full" is="sticky-header" data-sticky-type="always"><div class="header__icons header__icons--start flex justify-start z-2">
   <div class="header__buttons flex items-center gap-1d5"><a href="/search" class="search-drawer-button flex items-center justify-center" is="magnet-link" aria-controls="SearchDrawer" aria-expanded="false" >
@@ -719,6 +725,12 @@ first.parentNode.insertBefore(script, first);
       </li></ul>
 </nav>
   </div>
+<div class="header__icons header__icons--end flex justify-end items-center z-2">
+  <a href="https://www.youtube.com/@SrdsEDITS" class="social_platform flex items-center justify-center" is="magnet-link" title="Srds Edits on YouTube" target="_blank" rel="noopener noreferrer"><svg class="icon icon-youtube icon-lg" viewBox="0 0 24 24" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M23.8 7.6C23.8 7.6 23.6 5.9 22.8 5.2C21.9 4.2 20.9 4.2 20.4 4.2C17 4 12 4 12 4C12 4 7 4 3.6 4.2C3.1 4.3 2.1 4.3 1.2 5.2C0.5 5.9 0.2 7.6 0.2 7.6C0.2 7.6 0 9.5 0 11.5V13.3C0 15.2 0.2 17.2 0.2 17.2C0.2 17.2 0.4 18.9 1.2 19.6C2.1 20.6 3.3 20.5 3.8 20.6C5.7 20.8 12 20.8 12 20.8C12 20.8 17 20.8 20.4 20.5C20.9 20.4 21.9 20.4 22.8 19.5C23.5 18.8 23.8 17.1 23.8 17.1C23.8 17.1 24 15.2 24 13.2V11.4C24 9.5 23.8 7.6 23.8 7.6ZM9.5 15.5V8.8L16 12.2L9.5 15.5Z"/>
+    </svg><span class="sr-only">YouTube</span>
+  </a>
+</div>
 <span class="header__corner corner left bottom flex absolute pointer-events-none">
   <svg class="w-full h-auto" viewBox="0 0 101 101" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M101 0H0V101H1C1 45.7715 45.7715 1 101 1V0Z"></path>
