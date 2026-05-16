@@ -698,38 +698,94 @@ first.parentNode.insertBefore(script, first);
   }
 
   #shopify-section-sections--19860118896866__header .header.header--left-center {
-    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  #shopify-section-sections--19860118896866__header .header__center {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  #shopify-section-sections--19860118896866__header .header__navigation {
+    justify-content: center;
+  }
+
+  #shopify-section-sections--19860118896866__header .header__icons--start {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: fit-content;
+    max-width: fit-content;
+    pointer-events: none;
   }
 
   #shopify-section-sections--19860118896866__header .header__icons--end {
-    grid-column: -1;
+    grid-column: 3;
+    grid-row: 1;
     justify-self: end;
-    margin-left: auto;
+    align-self: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: fit-content;
+    max-width: fit-content;
+    pointer-events: none;
   }
-</style><header data-section-id="sections--19860118896866__header" class="header header--left-center mobile:header--center page-width page-width--full section section--rounded section--padding grid items-center z-20 relative w-full" is="sticky-header" data-sticky-type="always"><div class="header__icons header__icons--start flex justify-start z-2">
-  <div class="header__buttons flex items-center gap-1d5"><a href="/search" class="search-drawer-button flex items-center justify-center" is="magnet-link" aria-controls="SearchDrawer" aria-expanded="false" >
-        <span class="sr-only">Search</span><svg class="icon icon-search icon-lg" viewBox="0 0 24 24" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  #shopify-section-sections--19860118896866__header .header-search-link,
+  #shopify-section-sections--19860118896866__header .header-youtube-link {
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex: 0 0 auto;
+    padding: 0.35rem;
+    line-height: 0;
+  }
+
+  #shopify-section-sections--19860118896866__header .header-search-link::before,
+  #shopify-section-sections--19860118896866__header .header-search-link::after,
+  #shopify-section-sections--19860118896866__header .header-youtube-link::before,
+  #shopify-section-sections--19860118896866__header .header-youtube-link::after {
+    display: none;
+  }
+</style><header data-section-id="sections--19860118896866__header" class="header header--left-center mobile:header--center page-width page-width--full section section--rounded section--padding grid items-center z-20 relative w-full" is="sticky-header" data-sticky-type="always"><div class="header__icons header__icons--start z-2">
+  <a href="/search" class="header-search-link search-drawer-button" aria-controls="SearchDrawer" aria-expanded="false" aria-label="Search"><svg class="icon icon-search icon-lg" viewBox="0 0 24 24" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path stroke-linecap="round" d="m21 21-3.636-3.636m0 0A9 9 0 1 0 4.636 4.636a9 9 0 0 0 12.728 12.728Z"></path>
-    </svg></a></div>
+    </svg></a>
 </div>
-<div class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization"><a
-      href="/"
-      itemprop="url"
-      class="header__logo-link has-white-logo flex items-center relative"
-    >
-      <span class="sr-only">Zach&#39;s Tech Turf</span><img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1__1__00000-removebg-preview.png?raw=true" alt="" srcset="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1__1__00000-removebg-preview.png?raw=true" width="1920" height="1920" loading="eager" sizes="70px" style="max-height: 140px;max-width: 78px;" itemprop="logo" is="lazy-image" class="logo hidden md:block"><img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1%20(1)_00000.png?raw=true" alt="" srcset="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1%20(1)_00000.png?raw=true" width="1920" height="1080" loading="eager" sizes="70px" style="max-height: 39.375px;max-width: 70px;" itemprop="logo" is="lazy-image" class="logo md:hidden"><img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1%20(1).png?raw=true" alt="" srcset="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1%20(1).png?raw=true" width="1920" height="1080" loading="eager" sizes="70px" style="max-height: 39.375px;max-width: 70px;" itemprop="logo" is="lazy-image" class="white-logo hidden md:block absolute"><img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1%20(1).png?raw=true" alt="" srcset="//zttbuilds.com/cdn/shop/files/ZTT_White_2.png?v=1756849428&amp;width=70 70w, //zttbuilds.com/cdn/shop/files/ZTT_White_2.png?v=1756849428&amp;width=140 140w" width="1920" height="1080" loading="eager" sizes="70px" style="max-height: 39.375px;max-width: 70px;" itemprop="logo" is="lazy-image" class="white-logo md:hidden absolute"></a></div><div class="header__navigation hidden lg:flex lg:gap-5 lg:justify-start">
-    <nav class="header__menu hidden lg:flex" role="navigation" aria-label="Primary"><ul class="flex flex-wrap list-menu with-block"><li>
-        <a href="/" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer" is="magnet-link" data-magnet="0">
-          <span class="btn-text" data-text>Home</span><span class="btn-text btn-duplicate">Home</span></a>
-      </li>
-      </li></ul>
-</nav>
-  </div>
-<div class="header__icons header__icons--end flex justify-end items-center z-2">
-  <a href="https://www.youtube.com/@SrdsEDITS" class="social_platform flex items-center justify-center" is="magnet-link" title="Srds Edits on YouTube" target="_blank" rel="noopener noreferrer"><svg class="icon icon-youtube icon-lg" viewBox="0 0 24 24" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M23.8 7.6C23.8 7.6 23.6 5.9 22.8 5.2C21.9 4.2 20.9 4.2 20.4 4.2C17 4 12 4 12 4C12 4 7 4 3.6 4.2C3.1 4.3 2.1 4.3 1.2 5.2C0.5 5.9 0.2 7.6 0.2 7.6C0.2 7.6 0 9.5 0 11.5V13.3C0 15.2 0.2 17.2 0.2 17.2C0.2 17.2 0.4 18.9 1.2 19.6C2.1 20.6 3.3 20.5 3.8 20.6C5.7 20.8 12 20.8 12 20.8C12 20.8 17 20.8 20.4 20.5C20.9 20.4 21.9 20.4 22.8 19.5C23.5 18.8 23.8 17.1 23.8 17.1C23.8 17.1 24 15.2 24 13.2V11.4C24 9.5 23.8 7.6 23.8 7.6ZM9.5 15.5V8.8L16 12.2L9.5 15.5Z"/>
-    </svg><span class="sr-only">YouTube</span>
+<div class="header__center flex items-center justify-center gap-6 lg:gap-8 z-2">
+
+<!-- LOGO FIRST -->
+<div class="header__logo flex justify-center shrink-0">
+  <a href="/" class="header__logo-link flex items-center">
+    <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ArcKeyLogoDraft1__1__00000-removebg-preview.png?raw=true"
+         style="max-height: 40px;">
   </a>
+</div>
+
+<!-- NAVIGATION -->
+<div class="header__navigation flex">
+  <nav class="header__menu flex">
+    <ul class="flex gap-6 list-menu">
+      <li>
+        <a href="/" class="menu__item">Home</a>
+      </li>
+      <li>
+        <a href="/products/arckey" class="menu__item">Shop</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+</div>
+<div class="header__icons header__icons--end z-2">
+  <a href="https://www.youtube.com/@SrdsEDITS" class="header-youtube-link social_platform" title="Srds Edits on YouTube" target="_blank" rel="noopener noreferrer" aria-label="Srds Edits on YouTube"><svg class="icon icon-youtube icon-lg" viewBox="0 0 24 24" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M23.8 7.6C23.8 7.6 23.6 5.9 22.8 5.2C21.9 4.2 20.9 4.2 20.4 4.2C17 4 12 4 12 4C12 4 7 4 3.6 4.2C3.1 4.3 2.1 4.3 1.2 5.2C0.5 5.9 0.2 7.6 0.2 7.6C0.2 7.6 0 9.5 0 11.5V13.3C0 15.2 0.2 17.2 0.2 17.2C0.2 17.2 0.4 18.9 1.2 19.6C2.1 20.6 3.3 20.5 3.8 20.6C5.7 20.8 12 20.8 12 20.8C12 20.8 17 20.8 20.4 20.5C20.9 20.4 21.9 20.4 22.8 19.5C23.5 18.8 23.8 17.1 23.8 17.1C23.8 17.1 24 15.2 24 13.2V11.4C24 9.5 23.8 7.6 23.8 7.6ZM9.5 15.5V8.8L16 12.2L9.5 15.5Z"/>
+    </svg></a>
 </div>
 <span class="header__corner corner left bottom flex absolute pointer-events-none">
   <svg class="w-full h-auto" viewBox="0 0 101 101" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
