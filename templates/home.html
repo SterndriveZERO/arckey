@@ -812,10 +812,12 @@ first.parentNode.insertBefore(script, first);
     flex: 0 0 auto;
     width: fit-content;
     max-width: fit-content;
+    gap: 0.25rem;
     pointer-events: none;
   }
 
   #shopify-section-sections--19860118896866__header .header-search-link,
+  #shopify-section-sections--19860118896866__header .header-discord-link,
   #shopify-section-sections--19860118896866__header .header-youtube-link {
     pointer-events: auto;
     display: inline-flex;
@@ -829,6 +831,8 @@ first.parentNode.insertBefore(script, first);
 
   #shopify-section-sections--19860118896866__header .header-search-link::before,
   #shopify-section-sections--19860118896866__header .header-search-link::after,
+  #shopify-section-sections--19860118896866__header .header-discord-link::before,
+  #shopify-section-sections--19860118896866__header .header-discord-link::after,
   #shopify-section-sections--19860118896866__header .header-youtube-link::before,
   #shopify-section-sections--19860118896866__header .header-youtube-link::after {
     display: none;
@@ -917,9 +921,27 @@ first.parentNode.insertBefore(script, first);
 
 </div>
 <div class="header__icons header__icons--end z-2">
-  <a href="https://www.youtube.com/@SrdsEDITS" class="header-youtube-link social_platform" title="Srds Edits on YouTube" target="_blank" rel="noopener noreferrer" aria-label="Srds Edits on YouTube"><svg class="icon icon-youtube icon-lg" viewBox="0 0 24 24" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <a href="https://discord.gg/K7ywt3MADZ"
+     class="header-discord-link social_platform"
+     title="Join Discord"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Join Discord">
+    <svg class="icon icon-discord icon-lg" viewBox="0 0 24 24" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+    </svg>
+  </a>
+  <a href="https://www.youtube.com/@SrdsEDITS" 
+     class="header-youtube-link social_platform" 
+     title="Srds Edits on YouTube" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Srds Edits on YouTube">
+    <svg class="icon icon-youtube icon-lg" viewBox="0 0 24 24" fill="currentColor">
       <path d="M23.8 7.6C23.8 7.6 23.6 5.9 22.8 5.2C21.9 4.2 20.9 4.2 20.4 4.2C17 4 12 4 12 4C12 4 7 4 3.6 4.2C3.1 4.3 2.1 4.3 1.2 5.2C0.5 5.9 0.2 7.6 0.2 7.6C0.2 7.6 0 9.5 0 11.5V13.3C0 15.2 0.2 17.2 0.2 17.2C0.2 17.2 0.4 18.9 1.2 19.6C2.1 20.6 3.3 20.5 3.8 20.6C5.7 20.8 12 20.8 12 20.8C12 20.8 17 20.8 20.4 20.5C20.9 20.4 21.9 20.4 22.8 19.5C23.5 18.8 23.8 17.1 23.8 17.1C23.8 17.1 24 15.2 24 13.2V11.4C24 9.5 23.8 7.6 23.8 7.6ZM9.5 15.5V8.8L16 12.2L9.5 15.5Z"/>
-    </svg></a>
+    </svg>
+  </a>
+
 </div>
 <span class="header__corner corner left bottom flex absolute pointer-events-none">
   <svg class="w-full h-auto" viewBox="0 0 101 101" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1207,7 +1229,7 @@ first.parentNode.insertBefore(script, first);
 <div class="section section--padding section--rounded relative">
   <div class="relative">
     <div class="video-hero banner media--750px mobile:media--auto relative"><video-media class="media deferred-media block banner__media media media--height w-full h-full relative"
-    style="--aspect-ratio: 1.775;" autoplay><img src="//zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=1920" alt="Load video: " srcset="//zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=300 300w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=400 400w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=500 500w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=600 600w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=700 700w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=800 800w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=900 900w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=1000 1000w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=1200 1200w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=1400 1400w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=1600 1600w, //zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000.jpg?v=1768590298&amp;width=1800 1800w" width="1920" height="1080" loading="eager" fetchpriority="high" sizes="100vw" is="lazy-image"><template><video playsinline="true" muted="muted" autoplay="autoplay" loop="loop" preload="metadata" poster="//zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000_800x.jpg?v=1768590298"><source src="//zttbuilds.com/cdn/shop/videos/c/vp/20a62c0bf60a40e1aaadc83c73850ebf/20a62c0bf60a40e1aaadc83c73850ebf.HD-1080p-7.2Mbps-67134930.mp4?v=0" type="video/mp4"><img src="//zttbuilds.com/cdn/shop/files/preview_images/20a62c0bf60a40e1aaadc83c73850ebf.thumbnail.0000000000_800x.jpg?v=1768590298"></video></template><button type="button" id="DeferredPoster-37347198828770" class="deferred-poster absolute top-0 left-0 w-full h-full" aria-label="Play video">
+    style="--aspect-ratio: 1.775;" autoplay><img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=truehttps://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true" alt="Load video: " srcset="https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true 300w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true 400w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true 500w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true600 600w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true700 700w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true800 800w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true900 900w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true1000 1000w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true1200 1200w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true1400 1400w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true1600 1600w, https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true1800 1800w" width="1920" height="1080" loading="eager" fetchpriority="high" sizes="100vw" is="lazy-image"><template><video playsinline="true" muted="muted" autoplay="autoplay" loop="loop" preload="metadata" poster="https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true"><source src="https://github.com/SterndriveZERO/corekeyboard/raw/refs/heads/main/0516.mp4" type="video/mp4"><img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/ezgif-frame-001.png?raw=true"></video></template><button type="button" id="DeferredPoster-37347198828770" class="deferred-poster absolute top-0 left-0 w-full h-full" aria-label="Play video">
         <span class="play-button absolute flex items-center justify-center rounded-full pointer-events-auto z-10"><svg class="icon icon-play icon-md" viewBox="0 0 36 36" stroke="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path d="M34 17.5006C34 18.3302 33.5707 19.0963 32.8683 19.5206L9.535 33.6629C9.164 33.8869 8.74867 34 8.33333 34C7.93667 34 7.54 33.8986 7.183 33.6936C6.45267 33.274 6 32.4915 6 31.6429V3.35817C6 2.50962 6.45267 1.72708 7.183 1.30752C7.91333 0.885606 8.814 0.899749 9.535 1.33816L32.8683 15.4805C33.5707 15.9048 34 16.6709 34 17.5006"></path>
     </svg><svg class="icon icon-pause icon-md" viewBox="0 0 36 36" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1217,9 +1239,9 @@ first.parentNode.insertBefore(script, first);
       </button></video-media><span class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none"></span>
         <div class="banner__content overflow-hidden absolute z-1 top-0 left-0 w-full h-full">
           <div class="page-width w-full h-full flex md:items-center md:justify-center items-center justify-center">
-            <div class="banner__box banner__box--medium md:text-center text-center"><h2 class="banner__title heading leading-none title-md" ><split-words class="split-words js-invisible block" data-animate="fade-up-large" data-animate-delay="250">Ignite Your Setup</split-words></h2><div class="rte body subtext-md leading-normal text-opacity" ><p>Shadow Bolt performance with an upgraded aesthetic.</p></div><a class="button button--primary button--md button--fixed icon-with-text" href="/products/fire-bolt-v1" is="hover-link" >
+            <div class="banner__box banner__box--medium md:text-center text-center"><h2 class="banner__title heading leading-none title-md" ><split-words class="split-words js-invisible block" data-animate="fade-up-large" data-animate-delay="250">Ignite Your Setup</split-words></h2><div class="rte body subtext-md leading-normal text-opacity" ><p>HellFire Pro with an upgraded aesthetic.</p></div><a class="button button--primary button--md button--fixed icon-with-text" href="/products/fire-bolt-v1" is="hover-link" >
     <span class="btn-fill" data-fill></span>
-    <span class="btn-text">Limited Edition Fire Bolt PC<svg class="icon icon-arrow-right icon-sm transform" viewBox="0 0 21 20" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <span class="btn-text">Limited Edition Hellfire Pro Keyboard<svg class="icon icon-arrow-right icon-sm transform" viewBox="0 0 21 20" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 10H18M18 10L12.1667 4.16675M18 10L12.1667 15.8334"></path>
     </svg></span>
   </a></div>
