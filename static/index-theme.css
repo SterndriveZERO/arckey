@@ -1,0 +1,230 @@
+/**
+ * Index page theme: gray page chrome, dark blue surfaces, reveal animations.
+ * Loaded last so overrides win over bundled Shopify CSS.
+ */
+
+:root {
+  --idx-gray-page: #8b939e;
+  --idx-gray-deep: #727b87;
+  --idx-navy-deep: #0c1829;
+  --idx-navy-mid: #132842;
+  --idx-navy-card: #162f52;
+  --idx-navy-highlight: #1e4978;
+  --idx-text: #e8eef7;
+  --idx-text-soft: #b8c5d9;
+  --idx-accent: #7cb3ff;
+  --idx-border: rgba(255, 255, 255, 0.08);
+}
+
+html.js {
+  background: linear-gradient(165deg, var(--idx-gray-page) 0%, var(--idx-gray-deep) 55%, #7a8491 100%);
+  min-height: 100%;
+}
+
+body.template-collection.gradient {
+  background: transparent !important;
+  color: var(--idx-text) !important;
+}
+
+/* Header / nav — navy instead of flat black */
+.color-scheme-5.gradient,
+.header-wrapper.color-scheme-5 {
+  --color-background: 19, 40, 72 !important;
+  --gradient-background: linear-gradient(
+    135deg,
+    #142a4d 0%,
+    #0f213d 45%,
+    #0c1a30 100%
+  ) !important;
+  --color-foreground: 232, 238, 247 !important;
+  --color-link: 124, 179, 255 !important;
+}
+
+.utility-bar.color-scheme-5 {
+  border-bottom: 1px solid var(--idx-border);
+  backdrop-filter: blur(12px);
+}
+
+sticky-header.header-wrapper,
+.header-wrapper {
+  box-shadow: 0 4px 24px rgba(5, 12, 24, 0.35);
+}
+
+.header__menu-item,
+.header__menu-item span {
+  color: var(--idx-text-soft) !important;
+}
+
+.header__menu-item:hover,
+.header__menu-item:focus {
+  color: var(--idx-accent) !important;
+}
+
+/* Main column — reads as one cohesive navy sheet on gray */
+#MainContent {
+  background: linear-gradient(
+    180deg,
+    var(--idx-navy-deep) 0%,
+    var(--idx-navy-mid) 22%,
+    #112338 100%
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Collection hero */
+.collection-header-module {
+  background: radial-gradient(ellipse 120% 80% at 50% 0%, rgba(30, 73, 120, 0.35), transparent 55%),
+    linear-gradient(180deg, rgba(15, 31, 53, 0.9), rgba(12, 24, 41, 0.96)) !important;
+}
+
+.collection-title {
+  color: var(--idx-text) !important;
+  letter-spacing: 0.04em;
+  font-weight: 650 !important;
+}
+
+.collection-description,
+.collection-description p,
+.collection-description span {
+  color: var(--idx-text-soft) !important;
+}
+
+.collection-description a {
+  color: var(--idx-accent) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .collection-header-content .collection-description {
+    max-height: 5rem;
+    overflow: hidden;
+    transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+  }
+
+  .collection-header-content .collection-description::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.25rem;
+    background: linear-gradient(transparent, rgba(15, 31, 53, 0.96));
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.35s ease;
+  }
+
+  .collection-header-content:hover .collection-description {
+    max-height: 28rem;
+  }
+
+  .collection-header-content:hover .collection-description::after {
+    opacity: 0;
+  }
+}
+
+/* Product grid section background */
+#MainContent .gradient.color-scheme-07202f23-e2f6-4872-a5cd-6d3fdfdafa5d,
+#MainContent [class*="color-scheme-"].gradient {
+  --color-background: 17, 36, 58 !important;
+  --gradient-background: linear-gradient(180deg, #142742 0%, #101f34 100%) !important;
+  --color-foreground: 232, 238, 247 !important;
+}
+
+body.template-collection .gradient {
+  color: rgba(232, 238, 247, 0.88) !important;
+}
+
+/* Product cards */
+.card-wrapper,
+.product-card-wrapper {
+  background: linear-gradient(155deg, rgba(22, 47, 82, 0.92) 0%, rgba(14, 30, 52, 0.96) 100%) !important;
+  border: 1px solid var(--idx-border) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease !important;
+}
+
+.card-wrapper:hover,
+.product-card-wrapper:hover {
+  transform: translateY(-4px);
+  border-color: rgba(124, 179, 255, 0.35) !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(124, 179, 255, 0.12) !important;
+}
+
+.card-information .card__heading,
+.card__heading a,
+.card__heading .full-unstyled-link {
+  color: var(--idx-text) !important;
+}
+
+.price,
+.price-item,
+.price__regular .price-item--regular {
+  color: var(--idx-text-soft) !important;
+}
+
+/* Buttons / chips */
+.button,
+.shopify-payment-button__button--unbranded {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a5f 140%) !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 18px rgba(37, 99, 235, 0.35) !important;
+}
+
+.button--secondary {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid var(--idx-border) !important;
+  color: var(--idx-text) !important;
+}
+
+/* Certification / misc sections */
+.shopify-section.section-collection-certification {
+  background: rgba(12, 24, 41, 0.55) !important;
+}
+
+/* Links sitewide on index */
+#MainContent a.link {
+  color: var(--idx-accent);
+}
+
+#MainContent a.link:hover {
+  color: #a8ccff;
+}
+
+/* ─── Reveal animations (paired with index-reveal.js) ─── */
+.idx-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.idx-reveal.idx-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.idx-reveal.idx-delay-1 {
+  transition-delay: 0.06s;
+}
+
+.idx-reveal.idx-delay-2 {
+  transition-delay: 0.12s;
+}
+
+.idx-reveal.idx-delay-3 {
+  transition-delay: 0.18s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .idx-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
