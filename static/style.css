@@ -585,6 +585,8 @@ header h1 {
 .site-footer-inner a:hover {
   color: var(--accent-amber);
 }
+
+
 /* PARTICLE CANVAS BACKGROUND */
 #particles {
   position: fixed;
