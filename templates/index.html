@@ -809,6 +809,31 @@ first.parentNode.insertBefore(script, first);
   #shopify-section-sections--19860118896866__header .header-youtube-link::after {
     display: none;
   }
+
+  @media screen and (max-width: 1023px) {
+    #shopify-section-sections--19860118896866__header .header__logo img {
+      max-height: 44px !important;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block {
+      gap: 0.25rem;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block .menu__item {
+      min-height: auto;
+      padding: 0.35rem 0.5rem;
+      font-size: 0.8125rem;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block .menu__item .btn-duplicate {
+      display: none;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block .menu__item [data-text] {
+      opacity: 1;
+      transform: none;
+    }
+  }
 </style><header data-section-id="sections--19860118896866__header" class="header header--left-center mobile:header--center page-width page-width--full section section--rounded section--padding grid items-center z-20 relative w-full" is="sticky-header" data-sticky-type="always"><div class="header__icons header__icons--start z-2">
   <div class="header__left">
     <div class="header__logo flex shrink-0">
@@ -821,9 +846,9 @@ first.parentNode.insertBefore(script, first);
     </svg></a>
   </div>
 </div>
-<div class="header__center hidden lg:flex items-center justify-center gap-6 lg:gap-8 z-2">
+<div class="header__center flex items-center justify-center gap-4 lg:gap-8 z-2">
 <div class="header__navigation flex">
-  <nav class="header__menu hidden lg:flex" role="navigation" aria-label="Primary"><ul class="flex flex-wrap list-menu with-block justify-center gap-4 lg:gap-6"><li>
+  <nav class="header__menu flex" role="navigation" aria-label="Primary"><ul class="flex flex-wrap list-menu with-block justify-center gap-4 lg:gap-6"><li>
         <a href="/home" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer" is="magnet-link" data-magnet="0">
           <span class="btn-text" data-text>Home</span><span class="btn-text btn-duplicate">Home</span></a>
       </li><li>

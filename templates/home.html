@@ -837,6 +837,31 @@ first.parentNode.insertBefore(script, first);
   #shopify-section-sections--19860118896866__header .header-youtube-link::after {
     display: none;
   }
+
+  @media screen and (max-width: 1023px) {
+    #shopify-section-sections--19860118896866__header .header__logo img {
+      max-height: 44px !important;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block {
+      gap: 0.25rem;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block .menu__item {
+      min-height: auto;
+      padding: 0.35rem 0.5rem;
+      font-size: 0.8125rem;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block .menu__item .btn-duplicate {
+      display: none;
+    }
+
+    #shopify-section-sections--19860118896866__header .header__menu > ul.with-block .menu__item [data-text] {
+      opacity: 1;
+      transform: none;
+    }
+  }
 </style><menu-drawer id="MenuDrawer" class="menu-drawer drawer drawer--start z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
   data-section-id="sections--19860118896866__header"
   hidden
@@ -907,9 +932,9 @@ first.parentNode.insertBefore(script, first);
     
   </div>
 </div>
-<div class="header__center hidden lg:flex items-center justify-center gap-6 lg:gap-8 z-2">
+<div class="header__center flex items-center justify-center gap-4 lg:gap-8 z-2">
 <div class="header__navigation flex">
-  <nav class="header__menu hidden lg:flex" role="navigation" aria-label="Primary"><ul class="flex flex-wrap list-menu with-block justify-center gap-4 lg:gap-6"><li>
+  <nav class="header__menu flex" role="navigation" aria-label="Primary"><ul class="flex flex-wrap list-menu with-block justify-center gap-4 lg:gap-6"><li>
         <a href="/" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer" is="magnet-link" data-magnet="0">
           <span class="btn-text" data-text>Home</span><span class="btn-text btn-duplicate">Home</span></a>
       </li><li>
