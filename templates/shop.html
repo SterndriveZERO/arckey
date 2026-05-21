@@ -1186,6 +1186,35 @@ first.parentNode.insertBefore(script, first);
   --color-border-dark: var(--color-foreground)/ 0.35;
   --color-border-light: var(--color-foreground)/ 0.08;
   }
+
+  .product-card .product-desc {
+    margin: 0.5rem auto 0;
+    padding: 0 0.5rem;
+    max-width: 20rem;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    color: rgb(var(--color-foreground) / 0.78);
+    text-align: center;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (hover: hover) {
+    .product-card .product-desc:hover {
+      -webkit-line-clamp: unset;
+      display: block;
+      overflow: visible;
+    }
+  }
+
+  .product-card .product-desc.is-expanded {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+  }
 </style>
 <script src="//zttbuilds.com/cdn/shop/t/4/assets/collection.js?v=13163690371390186361756831546" defer></script>
 
@@ -1211,7 +1240,7 @@ first.parentNode.insertBefore(script, first);
             </p>
         
             <span class="price__regular">$139.99</span>
-            <p>Full-size gaming keyboard</p>
+            <p class="product-desc" title="Click or hover to read more">The Glossy Ice Z is a top of the line gaming board with snappy switches with a nice thocky/creamy sound, and some really smooth glossy keycaps. It is hot swappable and is one of our higher end boards.</p>
           </div>
         
           <!-- Product 2 -->
@@ -1228,7 +1257,7 @@ first.parentNode.insertBefore(script, first);
             </p>
         
             <span class="price__regular">$105.99</span>
-            <p>Compact 60%</p>
+            <p class="product-desc" title="Click or hover to read more">The Sky Blue Plus is one of our incredible budget keyboards with creamy switches and a nice gradient design. It is hot swappable and is a very good keyboard with a high quality design.</p>
           </div>
         
           <!-- Product 3 -->
@@ -1245,23 +1274,24 @@ first.parentNode.insertBefore(script, first);
             </p>
         
             <span class="price__regular">$144.99</span>
+            <p class="product-desc" title="Click or hover to read more">The Hellfire Pro is a top of the line board with a nice blazing red gradient design and some very snappy thocky switches.</p>
           </div>
         
           <!-- Product 4 -->
           <div class="card product-card product-card--card flex flex-col text-center">
             
             <div class="product-card__media">
-              <a class="block" href="/products/yin-yang-board">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Mechanical_Keyboard_Keyframes_In_a_minimalist_high-tech_style_a_starkly_lit_uI9EDmoo.png?raw=true">
+              <a class="block" href="/products/blackhole-plus">
+                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/image-removebg-preview%20(12).png?raw=true">
               </a>
             </div>
         
             <p class="product-card__title">
-              <a href="/products/yin-yang-board">Yin and Yang Board</a>
+              <a href="/products/blackhole-plus">Blackhole Plus</a>
             </p>
         
             <span class="price__regular">$142.99</span>
-            <p>Custom rainbow base</p>
+            <p class="product-desc" title="Click or hover to read more">The Blackhole Plus is an extremely high quality yet cheap board with a snappy, creamy sound. It has an all black aesthetic that makes it look clean and a very smooth design.</p>
           </div>
         
           <!-- Product 5 -->
@@ -1278,7 +1308,7 @@ first.parentNode.insertBefore(script, first);
             </p>
         
             <span class="price__regular">$115.99</span>
-            <p>Custom RGB colors</p>
+            <p class="product-desc" title="Click or hover to read more">The Black Swirl Pro is a mid-range keyboard with an incredible RGB flow design. It has snappy creamy switches that sound and feel satisfying.</p>
           </div>
         
           <!-- Product 6 -->
@@ -1295,7 +1325,7 @@ first.parentNode.insertBefore(script, first);
             </p>
         
             <span class="price__regular">$118.99</span>
-            <p>Custom RGB colors</p>
+            <p class="product-desc" title="Click or hover to read more">The White Swirl Pro is a mid-range keyboard with an incredible RGB flow design. It has snappy creamy switches that sound and feel satisfying.</p>
           </div>
         
         </motion-list>
@@ -1305,6 +1335,29 @@ first.parentNode.insertBefore(script, first);
 
   </div>
 </div>
+
+<script>
+(function () {
+  document.querySelectorAll('.product-desc').forEach(function (desc) {
+    desc.setAttribute('role', 'button');
+    desc.setAttribute('tabindex', '0');
+    desc.setAttribute('aria-expanded', 'false');
+
+    function toggle() {
+      var expanded = desc.classList.toggle('is-expanded');
+      desc.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    }
+
+    desc.addEventListener('click', toggle);
+    desc.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+})();
+</script>
 
 <script type="application/ld+json">
 {
@@ -1346,7 +1399,7 @@ first.parentNode.insertBefore(script, first);
       </button></video-media><span class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none"></span>
         <div class="banner__content overflow-hidden absolute z-1 top-0 left-0 w-full h-full">
           <div class="page-width w-full h-full flex md:items-center md:justify-center items-center justify-center">
-            <div class="banner__box banner__box--medium md:text-center text-center"><h2 class="banner__title heading leading-none title-md" ><split-words class="split-words js-invisible block" data-animate="fade-up-large" data-animate-delay="250">ArcKey</split-words></h2><div class="rte body subtext-md leading-normal text-opacity" ><p>Our signature prebuilt keyboard, optimized for performance and a clutter-free setup.</p></div><a class="button button--primary button--md button--fixed icon-with-text" href="/products/arckey" is="hover-link" >
+            <div class="banner__box banner__box--medium md:text-center text-center"><h2 class="banner__title heading leading-none title-md" ><split-words class="split-words js-invisible block" data-animate="fade-up-large" data-animate-delay="250">ArcKey</split-words></h2><div class="rte body subtext-md leading-normal text-opacity" ><p>Our signataure keyboard, Yin and Yang Plus is a high end split design gaming keyboard with snappy thocky switches.</p></div><a class="button button--primary button--md button--fixed icon-with-text" href="/products/arckey" is="hover-link" >
     <span class="btn-fill" data-fill></span>
     <span class="btn-text">Shop Yin and Yang Board<svg class="icon icon-arrow-right icon-sm transform" viewBox="0 0 21 20" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 10H18M18 10L12.1667 4.16675M18 10L12.1667 15.8334"></path>
