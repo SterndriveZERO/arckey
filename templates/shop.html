@@ -1188,7 +1188,7 @@ first.parentNode.insertBefore(script, first);
   }
 
   .product-card .product-desc {
-    margin: 0.5rem auto 0;
+    margin: var(--sp-2) auto 0;
     padding: 0 0.5rem;
     max-width: 20rem;
     font-size: 0.875rem;
@@ -1215,6 +1215,82 @@ first.parentNode.insertBefore(script, first);
     display: block;
     overflow: visible;
   }
+
+  #shopify-section-template--19910771146978__main-collection .product-card.flex {
+    gap: var(--sp-2);
+  }
+
+  #shopify-section-template--19910771146978__main-collection .product-card__media {
+    margin-block-end: 0;
+  }
+
+  #shopify-section-template--19910771146978__main-collection .product-card__title {
+    margin-block-start: var(--sp-2);
+  }
+
+  #shopify-section-template--19910771146978__main-collection .product-card > .price__regular {
+    display: block;
+    margin-block-start: var(--sp-1);
+  }
+
+  .product-card__media.relative {
+    position: relative;
+  }
+
+  .product-card__preview-link {
+    position: relative;
+    display: block;
+    line-height: 0;
+  }
+
+  .product-card__preview-link.media--adapt {
+    height: auto;
+    padding-block-end: 0;
+  }
+
+  .product-card__preview-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.5s cubic-bezier(0.3, 1, 0.3, 1), transform 0.5s cubic-bezier(0.3, 1, 0.3, 1);
+  }
+
+  .product-card__preview-img--primary {
+    position: static;
+  }
+
+  .product-card__preview-img--alt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.98);
+    pointer-events: none;
+  }
+
+  @media (hover: hover) {
+    .product-card__preview-link:hover .product-card__preview-img--primary {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+
+    .product-card__preview-link:hover .product-card__preview-img--alt {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .product-card__preview-link.is-alt .product-card__preview-img--primary {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  .product-card__preview-link.is-alt .product-card__preview-img--alt {
+    opacity: 1;
+    transform: scale(1);
+  }
 </style>
 <script src="//zttbuilds.com/cdn/shop/t/4/assets/collection.js?v=13163690371390186361756831546" defer></script>
 
@@ -1227,11 +1303,11 @@ first.parentNode.insertBefore(script, first);
         <motion-list class="card-grid card-grid--3 mobile:card-grid--2 grid relative">
 
           <!-- Product 1 -->
-          <div class="card product-card product-card--card flex flex-col text-center">
-            
-            <div class="product-card__media">
-              <a class="block" href="/products/ice-blue-z">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/RGB_Mechanism_Shot_A_white_mechanical_keyboard_is_angled_with_its_7pWeBWH--removebg-preview.png?raw=true">
+          <div class="card product-card product-card--card flex flex-col leading-none relative text-center">
+            <div class="product-card__media product-card__preview relative h-auto">
+              <a class="block relative media media--contain product-card__preview-link" href="/products/glossy-ice-z" aria-label="Glossy Ice Z" tabindex="-1">
+                <img class="product-card__preview-img product-card__preview-img--primary" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/glossy%20ice%20z%201.png?raw=true" alt="Glossy Ice Z" loading="lazy" is="lazy-image">
+                <img class="product-card__preview-img product-card__preview-img--alt" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Cinematic_Photography_A_white_keyboard_with_illuminated_blue_and_purple_QYsmYIqG.png?raw=true" alt="Glossy Ice Z alternate angle" loading="lazy" is="lazy-image">
               </a>
             </div>
         
@@ -1244,11 +1320,11 @@ first.parentNode.insertBefore(script, first);
           </div>
         
           <!-- Product 2 -->
-          <div class="card product-card product-card--card flex flex-col text-center">
-            
-            <div class="product-card__media">
-              <a class="block" href="/products/sky-blue-plus">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Keyboard_Product_Video_In_a_macro_photography_style_this_image_features_1gv4jGOO.png?raw=true">
+          <div class="card product-card product-card--card flex flex-col leading-none relative text-center">
+            <div class="product-card__media product-card__preview relative h-auto">
+              <a class="block relative media media--contain product-card__preview-link" href="/products/sky-blue-plus" aria-label="Sky Blue Plus" tabindex="-1">
+                <img class="product-card__preview-img product-card__preview-img--primary" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Keyboard_Product_Video_In_a_macro_photography_style_this_image_features_1gv4jGOO.png?raw=true" alt="Sky Blue Plus" loading="lazy" is="lazy-image">
+                <img class="product-card__preview-img product-card__preview-img--alt" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Keyboard_Product_Video_In_a_hyperrealistic_style_a_keyboard_with_light_Z9f3pRG8.png?raw=true" alt="Sky Blue Plus alternate angle" loading="lazy" is="lazy-image">
               </a>
             </div>
         
@@ -1261,11 +1337,11 @@ first.parentNode.insertBefore(script, first);
           </div>
         
           <!-- Product 3 -->
-          <div class="card product-card product-card--card flex flex-col text-center">
-            
-            <div class="product-card__media">
-              <a class="block" href="/products/hellfire-pro">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Mechanical_Key_Showcase_A_detailed_high-angle_view_showcases_a_DO_T2sw-.png?raw=true">
+          <div class="card product-card product-card--card flex flex-col leading-none relative text-center">
+            <div class="product-card__media product-card__preview relative h-auto">
+              <a class="block relative media media--contain product-card__preview-link" href="/products/hellfire-pro" aria-label="Hellfire Pro" tabindex="-1">
+                <img class="product-card__preview-img product-card__preview-img--primary" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Mechanical_Key_Showcase_A_detailed_high-angle_view_showcases_a_DO_T2sw-.png?raw=true" alt="Hellfire Pro" loading="lazy" is="lazy-image">
+                <img class="product-card__preview-img product-card__preview-img--alt" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Mechanical_Key_Showcase_A_mechanical_keyboard_is_displayed_with_keycaps_Erm_uqyl%20(1)%20(1).png?raw=true" alt="Hellfire Pro alternate angle" loading="lazy" is="lazy-image">
               </a>
             </div>
         
@@ -1278,11 +1354,11 @@ first.parentNode.insertBefore(script, first);
           </div>
         
           <!-- Product 4 -->
-          <div class="card product-card product-card--card flex flex-col text-center">
-            
-            <div class="product-card__media">
-              <a class="block" href="/products/blackhole-plus">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/image-removebg-preview%20(12).png?raw=true">
+          <div class="card product-card product-card--card flex flex-col leading-none relative text-center">
+            <div class="product-card__media product-card__preview relative h-auto">
+              <a class="block relative media media--contain product-card__preview-link" href="/products/blackhole-plus" aria-label="Blackhole Plus" tabindex="-1">
+                <img class="product-card__preview-img product-card__preview-img--primary" src="" alt="Blackhole Plus" loading="lazy" is="lazy-image">
+                <img class="product-card__preview-img product-card__preview-img--alt" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/image-removebg-preview%20(11).png?raw=true" alt="Blackhole Plus alternate angle" loading="lazy" is="lazy-image">
               </a>
             </div>
         
@@ -1295,11 +1371,11 @@ first.parentNode.insertBefore(script, first);
           </div>
         
           <!-- Product 5 -->
-          <div class="card product-card product-card--card flex flex-col text-center">
-            
-            <div class="product-card__media">
-              <a class="block" href="/products/black-swirl-pro">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Cinematic_Portrait_A_black_mechanical_keyboard_is_shown_from_a_low_LvVpsj-5.png?raw=true">
+          <div class="card product-card product-card--card flex flex-col leading-none relative text-center">
+            <div class="product-card__media product-card__preview relative h-auto">
+              <a class="block relative media media--contain product-card__preview-link" href="/products/black-swirl-pro" aria-label="Black Swirl Pro" tabindex="-1">
+                <img class="product-card__preview-img product-card__preview-img--primary" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Cinematic_Portrait_A_black_mechanical_keyboard_is_shown_from_a_low_LvVpsj-5.png?raw=true" alt="Black Swirl Pro" loading="lazy" is="lazy-image">
+                <img class="product-card__preview-img product-card__preview-img--alt" src="" alt="Black Swirl Pro alternate angle" loading="lazy" is="lazy-image">
               </a>
             </div>
         
@@ -1312,11 +1388,11 @@ first.parentNode.insertBefore(script, first);
           </div>
         
           <!-- Product 6 -->
-          <div class="card product-card product-card--card flex flex-col text-center">
-            
-            <div class="product-card__media">
-              <a class="block" href="/products/white-swirl-pro">
-                <img src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Birds_Eye_View_A_white_mechanical_keyboard_with_a_minimalist_BnxI_xbr-removebg-preview.png?raw=true">
+          <div class="card product-card product-card--card flex flex-col leading-none relative text-center">
+            <div class="product-card__media product-card__preview relative h-auto">
+              <a class="block relative media media--contain product-card__preview-link" href="/products/white-swirl-pro" aria-label="White Swirl Pro" tabindex="-1">
+                <img class="product-card__preview-img product-card__preview-img--primary" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/Birds_Eye_View_A_white_mechanical_keyboard_with_a_minimalist_BnxI_xbr-removebg-preview.png?raw=true" alt="White Swirl Pro" loading="lazy" is="lazy-image">
+                <img class="product-card__preview-img product-card__preview-img--alt" src="https://github.com/SterndriveZERO/corekeyboard/blob/main/RGB_Mechanism_Shot_A_white_mechanical_keyboard_with_translucent_tBZYyOHv.png?raw=true" alt="White Swirl Pro alternate angle" loading="lazy" is="lazy-image">
               </a>
             </div>
         
@@ -1338,6 +1414,16 @@ first.parentNode.insertBefore(script, first);
 
 <script>
 (function () {
+  document.querySelectorAll('.product-card__preview-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      if (window.matchMedia('(hover: hover)').matches) return;
+      if (!link.classList.contains('is-alt')) {
+        e.preventDefault();
+        link.classList.add('is-alt');
+      }
+    });
+  });
+
   document.querySelectorAll('.product-desc').forEach(function (desc) {
     desc.setAttribute('role', 'button');
     desc.setAttribute('tabindex', '0');
